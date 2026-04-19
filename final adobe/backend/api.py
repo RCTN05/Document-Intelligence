@@ -50,17 +50,38 @@ async def upload_files(files: List[UploadFile] = File(...)):
 # ==============================
 @app.post("/process")
 async def process_docs(request: dict):
-    if "files" not in request or "query" not in request:
-        raise HTTPException(status_code=400, detail="Missing files or query")
+    try:
+        if "files" not in request or "query" not in request:
+            raise HTTPException(status_code=400, detail="Missing files or query")
 
-    print("⚙️ Processing files:", request["files"])
+        print("⚙️ Processing files:", request["files"])
 
-    input_data = {
-        "documents": [{"filename": f} for f in request["files"]],
-        "persona": {"role": request.get("persona", "Analyst")},
-        "job_to_be_done": {"task": request["query"]}
-    }
+        BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+        INPUT_DIR = os.path.join(BASE_DIR, "data", "input_documents")
 
-    result = run_pipeline(input_data)
+        documents = []
 
-    return result
+        for f in request["files"]:
+            full_path = os.path.join(INPUT_DIR, f)
+
+            print("📄 Checking:", full_path)
+
+            if not os.path.exists(full_path):
+                raise Exception(f"File not found: {full_path}")
+
+            documents.append({"filename": full_path})
+
+        input_data = {
+            "documents": documents,
+            "persona": {"role": request.get("persona", "Analyst")},
+            "job_to_be_done": {"task": request["query"]}
+        }
+
+        result = run_pipeline(input_data)
+
+        print("✅ SUCCESS")
+        return result
+
+    except Exception as e:
+        print("❌ ERROR:", str(e))
+        return {"error": str(e)}
