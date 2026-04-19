@@ -1,0 +1,75 @@
+{
+    "metadata": {
+        "input_documents": [
+            "8c486532-71a9-4ec7-9239-487458bcf7cd_South of France - Traditions and Culture.pdf",
+            "bf94b3e0-923b-4f7e-a266-e30848b232ac_South of France - Tips and Tricks.pdf",
+            "7d30b463-aa1a-43b1-969d-c9a6fcdce57c_South of France - Things to Do.pdf",
+            "3b6b301c-7085-4822-b1c0-28b669f9ab45_South of France - Restaurants and Hotels.pdf",
+            "42b4fc17-28f0-4c90-a549-d8359567e552_South of France - History.pdf",
+            "af6796fd-f3c1-42e9-867f-22e47ed621d7_South of France - Cuisine.pdf",
+            "b894347b-7016-4ab5-b94c-6b374ca4adb5_South of France - Cities.pdf"
+        ],
+        "persona": "Analyst",
+        "job_to_be_done": "food tips ",
+        "processing_timestamp": "2026-04-18T13:21:05.155963"
+    },
+    "extracted_sections": [
+        {
+            "document": "7d30b463-aa1a-43b1-969d-c9a6fcdce57c_South of France - Things to Do.pdf",
+            "section_title": "Culinary Delights",
+            "importance_rank": 1,
+            "page_number": 5
+        },
+        {
+            "document": "af6796fd-f3c1-42e9-867f-22e47ed621d7_South of France - Cuisine.pdf",
+            "section_title": "Culinary Experiences",
+            "importance_rank": 2,
+            "page_number": 6
+        },
+        {
+            "document": "7d30b463-aa1a-43b1-969d-c9a6fcdce57c_South of France - Things to Do.pdf",
+            "section_title": "Cooking Classes",
+            "importance_rank": 3,
+            "page_number": 5
+        },
+        {
+            "document": "af6796fd-f3c1-42e9-867f-22e47ed621d7_South of France - Cuisine.pdf",
+            "section_title": "Famous Dishes",
+            "importance_rank": 4,
+            "page_number": 3
+        },
+        {
+            "document": "b894347b-7016-4ab5-b94c-6b374ca4adb5_South of France - Cities.pdf",
+            "section_title": "Travel Tips",
+            "importance_rank": 5,
+            "page_number": 2
+        }
+    ],
+    "subsection_analysis": [
+        {
+            "document": "7d30b463-aa1a-43b1-969d-c9a6fcdce57c_South of France - Things to Do.pdf",
+            "refined_text": "• Marseille : Participate in a seafood cooking class to make dishes like bouillabaisse. Cooki ng Classes  \n• Provence : Learn to prepare traditional dishes like ratatouille and bouillabaisse.",
+            "page_number": 5
+        },
+        {
+            "document": "af6796fd-f3c1-42e9-867f-22e47ed621d7_South of France - Cuisine.pdf",
+            "refined_text": "After the hunt, enjoy a truﬄe -themed meal featuring your freshly harvested finds. Dining at a farm -to-table restaurant is a wonderful way to support local \nagriculture and enjoy the freshest ingredients available.",
+            "page_number": 6
+        },
+        {
+            "document": "7d30b463-aa1a-43b1-969d-c9a6fcdce57c_South of France - Things to Do.pdf",
+            "refined_text": "• Marseille : Participate in a seafood cooking class to make dishes like bouillabaisse. Cooki ng Classes  \n• Provence : Learn to prepare traditional dishes like ratatouille and bouillabaisse.",
+            "page_number": 5
+        },
+        {
+            "document": "af6796fd-f3c1-42e9-867f-22e47ed621d7_South of France - Cuisine.pdf",
+            "refined_text": "• Salade Niçoise: A refreshing salad with tuna, hard-bo iled eggs, tomatoes, green beans, \nolives, and anchovies, dressed with olive oil and vinegar. Salade Niçoise is a perfect \nexample of the Mediterranean diet, which emphasizes fresh vegetables, lean proteins, and healthy fats.",
+            "page_number": 3
+        },
+        {
+            "document": "b894347b-7016-4ab5-b94c-6b374ca4adb5_South of France - Cities.pdf",
+            "refined_text": "The South of France is also famous for its \ncuisine, wines, and vibrant cultural scene. Learning a few basic French phrases can enhance your travel experience.",
+            "page_number": 2
+        }
+    ]
+}
