@@ -1,10 +1,10 @@
 import os
 import json
 import re
-from src.model_loader import load_heading_extractor
-from src.utils import extract_layout_with_features, extract_pdf_text, get_timestamp
-from src.relevance import load_sentence_transformer, rank_by_relevance
-from src.summarizer import summarize_section
+from model_loader import load_heading_extractor
+from utils import extract_layout_with_features, extract_pdf_text, get_timestamp
+from relevance import load_sentence_transformer, rank_by_relevance
+from summarizer import summarize_section
 
 # ==============================
 # 🔥 LOAD MODELS ONLY ONCE
