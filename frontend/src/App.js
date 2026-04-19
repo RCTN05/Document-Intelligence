@@ -18,7 +18,7 @@ export default function App() {
     const formData = new FormData();
     files.forEach((f) => formData.append("files", f));
 
-    const res = await axios.post("https://document-intelligence-11.onrender.com/upload", formData);
+    const res = await axios.post("https://document-intelligence-14.onrender.com/upload", formData);
     setUploadedFiles(res.data.files);
   };
 
@@ -27,7 +27,7 @@ export default function App() {
 
     setLoading(true);
 
-    const res = await axios.post("https://document-intelligence-11.onrender.com/process", {
+    const res = await axios.post("https://document-intelligence-14.onrender.com/process", {
       files: uploadedFiles,
       query,
       persona: "Analyst",
