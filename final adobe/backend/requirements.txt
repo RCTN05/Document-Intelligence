@@ -13,3 +13,4 @@ requests
 tqdm
 setuptools
 wheel
+pdfminer.six
